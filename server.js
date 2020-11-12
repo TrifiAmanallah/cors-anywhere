@@ -25,7 +25,7 @@ cors_proxy.createServer({
     originWhitelist: originWhitelist,
     requireHeader: [],
     setHeaders: {
-        'user-Agent': 'PostmanRuntime/7.26.5',
+        'user-agent': 'PostmanRuntime/7.26.5',
         'accept': '*/*',
         'connection': 'keep-alive'
     },
