@@ -1,4 +1,4 @@
-const version = "0.0.1";
+const version = "0.0.3";
 // Listen on a specific host via the HOST environment variable
 var host = process.env.HOST || '0.0.0.0';
 // Listen on a specific port via the PORT environment variable
@@ -25,9 +25,9 @@ cors_proxy.createServer({
     originWhitelist: originWhitelist,
     requireHeader: [],
     setHeaders: {
-        'User-Agent': 'PostmanRuntime/7.26.5',
-        'Accept': '*/*',
-        'Connection': 'keep-alive'
+        'user-Agent': 'PostmanRuntime/7.26.5',
+        'accept': '*/*',
+        'connection': 'keep-alive'
     },
     checkRateLimit: checkRateLimit,
     removeHeaders: [
