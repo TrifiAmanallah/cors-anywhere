@@ -24,11 +24,11 @@ cors_proxy.createServer({
     originBlacklist: originBlacklist,
     originWhitelist: originWhitelist,
     requireHeader: [],
-    setHeaders: [
-        { 'User-Agent': 'PostmanRuntime/7.26.5' },
-        { 'Accept': '*/*' },
-        { 'Connection': 'keep-alive' }
-    ],
+    setHeaders: {
+        'User-Agent': 'PostmanRuntime/7.26.5',
+        'Accept': '*/*',
+        'Connection': 'keep-alive'
+    },
     checkRateLimit: checkRateLimit,
     removeHeaders: [
         'cookie',
